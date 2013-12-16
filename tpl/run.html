@@ -1,0 +1,38 @@
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+
+<h2>{$lang->translator_admin_title}</h2>
+
+<h3>{$lang->translator_admin_export_subtitle}</h3>
+
+<form action="./" class="form-inline" method="post" ruleset="exportTranslator">
+    <input type="hidden" name="module" value="translator" />
+    <input type="hidden" name="act" value="procTranslatorAdminExportLangVariables" />
+    <label>Language code: </label>
+    <select name="txt_language_code" id="txt_language_code">
+        <!--@foreach($langs as $key => $val)-->
+            <option name="{$key}" value="{$key}">{$val}</option>
+        <!--@endforeach-->
+    </select>
+    <input class="btn btn-primary" type="submit" value="Export" />
+</form>
+
+<h3>{$lang->translator_admin_import_subtitle}</h3>
+
+<form enctype="multipart/form-data" action="./" method="post" ruleset="importTranslator" class="form-inline">
+    <input type="hidden" name="module" value="translator" />
+    <input type="hidden" name="act" value="procTranslatorAdminImportLangVariables" />
+    <label>File: </label>
+    <input type="file" name="data_file" size="40" />
+    <input class="btn btn-primary" type="submit" value="Import" />
+</form>
+
+<h3>{$lang->translator_admin_clean_subtitle}</h3>
+
+<form action="./" method="post">
+    <input type="hidden" name="module" value="translator" />
+    <input type="hidden" name="act" value="procTranslatorAdminCleanDuplicates" />
+    <input class="btn btn-primary" type="submit" value="Clean duplicates" />
+</form>

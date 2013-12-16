@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="1.0">
+    <title xml:lang="en">translator</title>
+    <description xml:lang="en">This module handle lanugage translation of site.</description>
+    <version>1.0</version>
+    <date>2013-12-13</date>
+    <category>service</category>
+    <author email_address="info@arnia.ro" link="http://www.arnia.ro">
+        <name xml:lang="en">Arnia</name>
+    </author>
+</module>

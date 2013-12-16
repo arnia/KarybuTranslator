@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <grants>
+	</grants>
+
+    <permissions>
+        <permission action="procTranslatorAdminExportLangVariables" target="manager" />
+    </permissions>
+	
+    <actions>
+        <action name="dispTranslatorAdminContent" type="view" standalone="true" admin_index="true" />
+
+        <action name="procTranslatorAdminExportLangVariables" type="controller" standalone="true" ruleset="exportTranslator" />
+        <action name="procTranslatorAdminImportLangVariables" type="controller" standalone="true" ruleset="importTranslator" />
+        <action name="procTranslatorAdminCleanDuplicates" type="controller" standalone="true" />
+	</actions>
+	
+	<menus>
+	    <menu name="translator" type="all">
+			<title xml:lang="en">Translator</title>
+		</menu>
+	</menus>
+	
+</module>

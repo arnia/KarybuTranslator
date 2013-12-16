@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<item name="translator_admin_title">
+		<value xml:lang="en"><![CDATA[Language Generator]]></value>
+	</item>
+	<item name="translator_admin_export_subtitle">
+		<value xml:lang="en"><![CDATA[Export to CSV]]></value>
+	</item>
+    <item name="translator_admin_import_subtitle">
+        <value xml:lang="en"><![CDATA[Import from CSV]]></value>
+    </item>
+    <item name="translator_admin_clean_subtitle">
+        <value xml:lang="en"><![CDATA[Clean XML duplicates]]></value>
+    </item>
+</lang>
